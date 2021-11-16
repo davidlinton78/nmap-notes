@@ -1,0 +1,12 @@
+nmap  = Network Mapper
+nmap -sL -n XX.XX.XX.XX/XX = To scan a list of targets(subnet) -n is to not list DNS info.
+nmap -sn XX.XX.XX.XX/XX = Host discovery only
+nmap -PR -sn XX.XX.XX.XX/XX = ARP scan only 
+nmap -PE -sn XX.XX.XX.XX/XX = ICMP scan only
+nmap -PP -sn XX.XX.XX.XX/XX = Timestamp request scan only
+nmap -PM -sn XX.XX.XX.XX/XX = Address Mask request scan only
+nmap -PS -sn XX.XX.XX.XX/XX = TCP SYN ping does not complete the three way handshake (Privileged Users)
+nmap -PA -sn XX.XX.XX.XX/XX = TCP ACK ping does complete three way handshake 
+nmap -PU -sn XX.XX.XX.XX/XX = UDP ping 
+nmap -R XX.XX.XX.XX/XX  = Queries the dns server even for offline hosts (--dns-servers XXXXXX)x= dnserver name 
+nmap -n XX.XX.XX.XX/XX  = No dns lookup
