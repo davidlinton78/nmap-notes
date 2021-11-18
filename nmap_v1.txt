@@ -10,3 +10,8 @@ nmap -PA -sn XX.XX.XX.XX/XX = TCP ACK ping does complete three way handshake
 nmap -PU -sn XX.XX.XX.XX/XX = UDP ping 
 nmap -R XX.XX.XX.XX/XX  = Queries the dns server even for offline hosts (--dns-servers XXXXXX)x= dnserver name 
 nmap -n XX.XX.XX.XX/XX  = No dns lookup
+nmap -oG - XX.XX.XX.XX/XX -vv > /xxxx/xxxx/xxxx(path to where document saved)
+nmap -oG - XX.XX.XX.XX/XX -pxx(scan for a specific port) -vv > /xxxx/xxxx/xxxx(path to where document saved)
+nmap -sT XX.XX.XX.XX/XX = TCP connect scan 
+nmap -sS XX.XX.XX.XX/XX = TCP syn scan
+nmap -sU XX.XX.XX.XX/XX = UDP scan
