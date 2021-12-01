@@ -15,3 +15,6 @@ nmap -oG - XX.XX.XX.XX/XX -pxx(scan for a specific port) -vv > /xxxx/xxxx/xxxx(p
 nmap -sT XX.XX.XX.XX/XX = TCP connect scan 
 nmap -sS XX.XX.XX.XX/XX = TCP syn scan
 nmap -sU XX.XX.XX.XX/XX = UDP scan
+nmap -sA XX.XX.XX.XX/XX = ACK scan
+nmap -sW XX.XX.XX.XX/XX = Windowing scan
+
